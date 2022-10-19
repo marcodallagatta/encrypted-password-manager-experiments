@@ -11,7 +11,7 @@ import ListItem from '../atoms/ListItem';
 import clsx from 'clsx';
 import TextArea from '../atoms/TextArea';
 
-const UrlList = React.memo(({ urls, onDelete }) => (
+const UrlList = ({ urls, onDelete }) => (
     <List className={classes.urlList}>
         {urls?.length > 0 &&
             urls.map((urlEntry, index) => (
@@ -26,7 +26,7 @@ const UrlList = React.memo(({ urls, onDelete }) => (
             </ListItem>
         )}
     </List>
-));
+);
 
 function PasswordEdit({ password, onSave, onDelete, onCancel }) {
     const [values, setValues] = useState(password);

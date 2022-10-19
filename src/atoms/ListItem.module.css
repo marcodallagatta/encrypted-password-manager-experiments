@@ -19,6 +19,7 @@
     background: var(--hover);
 }
 
+
 .selected,
 .selected:hover,
 .selected:focus {
